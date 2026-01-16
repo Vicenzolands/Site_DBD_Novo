@@ -1,0 +1,99 @@
+:root {
+  --whiteColor: #ffffff;
+  --darkColor: #1a1919;
+  --redColor: #722323;
+  --darkRedColor: #362222;
+}
+
+body {
+  background-color: #1a1919;
+  min-height: 100vh;
+}
+
+.border-red-custom:hover {
+  border-color: var(--redColor) !important;
+}
+
+header {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+#escolha {
+  padding-top: 3rem;
+}
+.text-red {
+  color: var(--redColor);
+}
+
+.circle-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  border: 2px solid #333;
+}
+
+.circle-img:hover {
+  transform: scale(1.1);
+}
+
+.link-text {
+  display: block;
+  margin-top: 10px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #333;
+}
+
+.link-text:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+.text-shadow {
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+/* Efeito RGB para o item Colabore - COM MAIOR ESPECIFICIDADE */
+.navbar-nav .nav-item .nav-link.rgb-effect {
+  animation: rgbAnimation 3s infinite;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  background-clip: padding-box;
+  border: none !important;
+}
+
+@keyframes rgbAnimation {
+  0% {
+    color: #ff0000 !important;
+    background-color: rgba(255, 0, 0, 0.2) !important;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+  }
+  33% {
+    color: #00ff00 !important;
+    background-color: rgba(0, 255, 0, 0.2) !important;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.7);
+  }
+  66% {
+    color: #0000ff !important;
+    background-color: rgba(0, 0, 255, 0.2) !important;
+    box-shadow: 0 0 15px rgba(0, 0, 255, 0.7);
+  }
+  100% {
+    color: #ff0000 !important;
+    background-color: rgba(255, 0, 0, 0.2) !important;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+  }
+}
+
+.navbar-nav .nav-item .nav-link.rgb-effect:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+}

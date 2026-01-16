@@ -1,0 +1,25 @@
+:root {
+  --whiteColor: #ffffff;
+  --darkColor: #1a1919;
+  --redColor: #722323;
+  --darkRedColor: #362222;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.bg-dark-d {
+  background-color: var(--darkColor);
+}
+
+#loop {
+  padding-top: 2rem;
+}
+
+.subtitulo {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
